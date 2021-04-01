@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    //知识点：
+    /*
+    * let声明的变量，只在let命令所在的代码块内有效（缩小了变量的作用域）
+    * 变量不可重复声明
+    * 没有变量提升
+    * 在代码块内，使用let命令声明变量之前，改变变量都是不可用的
+    * */
+    //使用Var声明的变量于是用let声明的变量
+//    var a=213;
+//    console.log(window.a);
+//    let b=123;
+//    console.log(b);
+    //块级作用域
+    /*
+    * const的作用：声明一个只读的常量
+    * 声明常量必须赋值
+    * 当常量的类型为引用类型时，值是可以被修改的（对象、数组）
+    * */
+
+    /*
+    * 解构赋值
+    **/
+            //数组赋值
+//                let [a,b,c]=[1,2,3];
+//                console.log(a)
+//                console.log(b)
+//                console.log(c)
+            //对象赋值
+//            let json_obj={
+//                name:"zhangyi",
+//                age:22
+//            }
+//            //使用与对象属性名一致的变量名
+//            let {name,age}=json_obj
+////                console.log(name)
+//            //使用别名
+//            let {name:n,age:a}=json_obj
+//                console.log(n,a)
+        //模板字符串
+            /*
+            * 使用方式：反引号``
+            * 在模板字符串中可解构变量、计算、调用函数
+            * */
+//            let name="zhangyi";
+//            let  age=90;
+//            let  age2=90;
+//            function names() {
+//                name:"zhangyi";
+//                ages:29
+//            }
+//            //使用    反引号 ``
+//           let str=`姓名：${name},年龄：${age}`;
+//           console.log(str);
+//           let str2=`a:${name+age},b:${age-age2}`
+//            console.log(str2)
+
+            //字符串方法：
+                let str1=" Hello World ";
+                console.log(str1.indexOf("d"));  //indexof()表示查找某个字母或数字的位子下表
+                console.log(str1.lastIndexOf("l"));//lastindexOf()表示查找某个字符或者数字最后出现的位置
+                console.log(str1.includes("o"));//includes()表示是否找到了参数字符串。返回布尔值
+                console.log(str1.startsWith("H"));//startsWith()表示参数字符串是否在原字符串的头部
+                console.log(str1.endsWith("d"));//表示参数字符串是否在原字符串的尾部。返回布尔值
+                console.log("x".repeat(3));//返回一个新的字符串，表示将字符串重复N次。
+                console.log(str1.padStart("t")); //用于头部补全
+                console.log(str1.padEnd("mm")); //用于尾部补全
+                console.log(str1.trimStart()); //消除字符串头部的空格
+                console.log(str1.trimEnd()); //消除尾部的空格
+
+
+
+
+
+
+
+</script>

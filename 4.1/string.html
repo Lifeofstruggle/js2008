@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    //let基本用法
+    /*
+    * let声明的变量，只在let命令所在的代码块内有效（缩小了变量的作用域）
+    * 变量不可重复声明
+    * 没有变量提升
+    * 在代码块内，使用let命令声明变量，改变量都是不可用的
+    * */
+    //使用var声明的变量与使用let声明的变量
+    console.log(window.a);
+    var a=10;
+    console.log(a);
+    console.log(window.b);
+    let b=100;
+    const t=100;
+    console.log(t);
+    console.log(b);
+
+    let [name,age,sex]=["zhangyi",90,"男"]
+    console.log(name);
+    console.log(age);
+    console.log(sex);
+    let str={
+        name:"张梅",
+        age:80,
+        sex:"女"
+    }
+    let {name:n,age:ag,sex:s}=str;
+       console.log(n)
+       console.log(ag)
+       console.log(s)
+    let names="zhangyi";
+    let d=22;
+    let d2=292;
+    //使用反引号
+    let r=`姓名：${names},数字：${d}`;
+    console.log(r);
+    let str1="Hello World";
+//      console.log(str1.indexOf("H"))
+//      console.log(str1.lastIndexOf("d"))
+//     console.log(str1.includes("H"))//表示是否找到了参数字符串
+//     console.log(str1.startsWith("H"))//表示参数字符串是否在原字符串的头部
+//    console.log(str1.endsWith("d"));//表示参数字符串是否在原字符串的尾部
+//    console.log(str1.repeat(3));//表示参数字符串是否在原字符串的尾部
+//    console.log("aaaa".repeat(3));//表示参数字符串是否在原字符串的尾部
+    console.log(padStart())
+
+
+
+
+
+
+
+
+</script>

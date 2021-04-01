@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+    </style>
+</head>
+<body>
+            <div class="niu">
+                <button class="niu01">AAA</button>
+                <button class="niu01">BBB</button>
+                <button class="niu01">CCC</button>
+                <button class="niu01">DDD</button>
+                <button class="niu01">EEE</button>
+            </div>
+</body>
+</html>
+<script>
+    window.onload=function () {
+        var niu01=document.querySelectorAll(".niu01");
+        for(var i=0;i<niu01.length;i++){
+                 niu01[i].index=i;
+            niu01[i].onclick=function () {
+                alert(this.index);
+            }
+        }
+
+    }
+
+
+
+</script>
