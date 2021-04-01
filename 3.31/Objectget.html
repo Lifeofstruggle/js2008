@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+//    //返回参数对象的原型
+//    var f=function () {}
+//    var F=new f();
+//    var n=Object.getPrototypeOf(F)===f.prototype
+//
+//    //特殊对象的原型
+//    //1.空对象的原型是Object.prototype
+//    var ad=Object.getPrototypeOf({}) //===Object.prototype
+//    //2.Object.prototype的原型是 null
+//       var add=Object.getPrototypeOf(Object.prototype);
+//    //3.函数的原型是 Function。prototype
+//    function t(){}
+//   var tt= Object.getPrototypeOf(t)  //===Function.prototype   true
+////    console.log(tt);
+//
+//    var a={};
+//    var b={x:1};
+//    var r=Object.setPrototypeOf(a,b);
+//   var t= Object.getPrototypeOf(a)
+//    console.log(t);
+//
+//
+//    var F =function () {
+//        this.foo='bar';
+//    }
+////    var f=new F();
+//    //等同于
+//    var f=Object.setPrototypeOf({},F.prototype);
+//    var t=F.call(f);
+
+    //原型对象
+    var A={
+        print:function(){
+            console.log("hello js");
+        }
+    }
+
+    //实例化对象
+    var B=Object.create(A);
+    var b=Object.getPrototypeOf(B);
+    B.print();
+    B.print ===A.print;
+//    console.log(b);
+
+
+
+
+
+
+
+
+</script>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .kuang2{
+            width:50px;
+            height:20px;
+        }
+    </style>
+</head>
+<body>
+<input type="text" class="kuang">
+<select name="" id="">
+    <option value="">+</option>
+    <option value="">-</option>
+    <option value="">*</option>
+    <option value="">/</option>
+</select>
+   <!--<button>-</button>-->
+<input type="text" class="kuang1">
+<button>=</button>
+<input type="text" class="kuang2">
+</body>
+</html>
+<script>
+    window.onload=function () {
+        var kuang=document.querySelector(".kuang");
+        kuang.onblur=function () {
+            alert(123);
+        }
+//        console.log(kuang_val);
+        var calc=new Object();
+        calc.add=function Calculator(a,b) {
+//                console.log(arguments);
+            var number=a+b;
+            return number;
+        }
+        calc.de=function Calculator(a,b) {
+            //                console.log(arguments);
+            var number=a-b;
+            return number;
+//            console.log(number);
+        }
+        calc.ride=function Calculator(a,b) {
+            //                console.log(arguments);
+            var number=a*b;
+            return number;
+//            console.log(number);
+        }
+        calc.divide=function Calculator(a,b) {
+            //                console.log(arguments);
+            var number=a/b;
+            return number;
+//            console.log(number);
+        }
+
+
+//   var a= window.prompt("请输入计算的第一个数值");
+//   var b= window.prompt("请输入计算的第二个数值");
+        calc.add(a,b);
+        calc.de(a,b);
+        calc.ride(a,b);
+        calc.divide(a,b);
+        document.write("您的计算结果为"+calc.divide(a,b));
+        document.write("您的计算结果为"+calc.ride(a,b));
+        document.write(calc.de(a,b));
+        document.write(calc.add(a,b));
+    }
+
+</script>
