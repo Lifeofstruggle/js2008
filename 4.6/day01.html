@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let name="zhangsan";
+    let age=11;
+    let say=()=>{return "Hello Es6"}
+    //对象中直接使用变量
+    let obj1={name,age,say}
+    console.log(obj1.name)
+    console.log(obj1.say())
+    console.log(obj1.age)
+
+    //方法简写
+    let obj0={
+        say:function () {
+            console.log(00);
+        }
+    }
+    let obj2={
+        sat(){
+            console.log(123);
+        }
+    }
+    obj0.say();
+    obj2.sat();
+</script>

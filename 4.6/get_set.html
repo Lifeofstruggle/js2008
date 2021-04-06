@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    //get方法和set方法
+    /*
+    * 访问器与修改器、取值函数与存值函数，
+    * 读取性时触发get方法，写属性时触发set方法
+    * */
+        let objl={
+            name:"zhangyi",
+            age:11,
+            sex:"n",
+            get name(){
+                console.log("正在读取name属性")
+            },
+            set name(v){
+                console.log("新值为：",v);
+            },
+            set age(k){
+                console.log("设置新值为：",k);
+            }
+        }
+objl.age=99;
+objl.name
+objl.name="张旭"
+
+</script>

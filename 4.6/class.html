@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+
+//自定构造函数
+//    function  Person(name,age){
+//        this.name=name
+//        this.age=age
+//    }
+//
+//    Person.prototype.say=function () {
+//        this.name=name
+//        this.age=age
+//    }
+//
+//    let pl=new Person("zhangyi",11)
+//    let p2=new Person("lisi",22)
+//    console.log(pl)
+
+
+    //Es6:new+class
+//    class Person{
+//        //构造器方法  实例化对象时会自动调用
+//        constructor(name,age){
+//            this.name=name;
+//            this.age=age;
+//        }
+//        say(){
+//            console.log(this.name,this.age);
+//        }
+//    }
+//    //通过new+class实例化对象
+//    let pl=new Person("wangwu",33);
+//    console.log(pl);
+
+
+    //constructor(构造方法)
+    //ES6之前的构造方法
+//    function Person(){
+//
+//    }
+//    let pl=new Person();
+//    console.log(pl.__proto__.constructor);
+
+        //实例化对象是会自动调用(如PHP中的构造方法)
+        class Person{
+            //构造方法 constructor
+            constructor(name,age){
+                this.name=name;
+                this.age=age;
+            }
+        }
+        let pl=new Person("zhangxu",88);
+        console.log(pl);
+
+
+
+
+
+</script>

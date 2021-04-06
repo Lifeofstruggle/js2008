@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+//    //方法一：
+//    obj.foo=true;
+//    //方法二：
+//    obj['f'+'oo']=123;
+//    //方法表达式
+//    let obj1={
+//            ['h'+'ello'](){
+//                return 'hi';
+//            }
+//    };
+//    console.log(obj.foo);
+
+    let person={
+        name:"zhangyi",
+        age:11,
+        sex:"n"
+    }
+//    console.log(person)
+
+    //将对象persin中的所有可枚举属性拷贝p1中
+    let pl={...person}
+//    console.log(pl);
+
+    let  arrl=[11,12,13,14,15,16]
+    let  objl={...arrl}
+//    console.log(arrl);
+//    console.log(objl);
+
+    //如果扩展运算符后面不是对象，则会自动将其转为对象
+
+//        console.log({...'hello'})
+        /*
+        打印结果为：
+        * 0: "h"
+         1: "e"
+         2: "l"
+         3: "l"
+         4: "o"
+         */
+
+
+
+
+
+
+
+
+</script>
