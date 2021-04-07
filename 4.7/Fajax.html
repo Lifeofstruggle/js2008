@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+//    document.load=function () {
+//        $.ajax({
+//            url:"http://127.0.0.1/4.7/php.php",         //请求地址
+//            method:"get",                           //get post
+//            data:{name:"zhangyi",age:18,sex:"男"},   //发送的数据
+//            dateType:"json",                   //json
+//            success:function num(){
+//
+//            },           //请求成功回调函数
+//            error:function false_s() {
+//
+//            }            //请求失败处理函数
+//
+//
+//
+//        })
+//    }
+
+    function ajax(){
+            let xhr=new XMLHttpRequest();
+             xhr.onreadystatechange=function () {
+                   if(xhr.readyState==4&&xhr.status==200){
+                       console.log(xhr.responseText);
+                   }
+             }
+             xhr.open("get","http://127.0.0.1/4.7/php.php")
+             xhr.send();
+    }
+    ajax();
+    $.ajax({
+            url:"http://127.0.0.1/4.7/php.php",         //请求地址
+            method:"get",                           //get post
+            data:{name:"zhangyi",age:18,sex:"男"},   //发送的数据
+            dateType:"json",                   //json
+            success:function num(){
+
+            },           //请求成功回调函数
+            error:function false_s() {
+
+            }            //请求失败处理函数
+
+
+
+    })
+
+
+
+
+
+
+
+
+
+</script>
